@@ -1,0 +1,277 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\nurzhan.pernebayev\\source\\repos\\Redemption\\Redemption\\Redemption.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\nurzhan.pernebayev\\source\\repos\\Redemption\\Redemption.Domain\\Redemption.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nurzhan.pernebayev\\source\\repos\\Redemption\\Redemption.Domain\\Redemption.Domain.csproj",
+        "projectName": "Redemption.Domain",
+        "projectPath": "C:\\Users\\nurzhan.pernebayev\\source\\repos\\Redemption\\Redemption.Domain\\Redemption.Domain.csproj",
+        "packagesPath": "C:\\Users\\nurzhan.pernebayev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nurzhan.pernebayev\\source\\repos\\Redemption\\Redemption.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\nurzhan.pernebayev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\nurzhan.pernebayev\\source\\repos\\Redemption\\Redemption.Infrastructure\\Redemption.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nurzhan.pernebayev\\source\\repos\\Redemption\\Redemption.Infrastructure\\Redemption.Infrastructure.csproj",
+        "projectName": "Redemption.Infrastructure",
+        "projectPath": "C:\\Users\\nurzhan.pernebayev\\source\\repos\\Redemption\\Redemption.Infrastructure\\Redemption.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\nurzhan.pernebayev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nurzhan.pernebayev\\source\\repos\\Redemption\\Redemption.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\nurzhan.pernebayev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\nurzhan.pernebayev\\source\\repos\\Redemption\\Redemption.Interfaces\\Redemption.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\nurzhan.pernebayev\\source\\repos\\Redemption\\Redemption.Interfaces\\Redemption.Interfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\nurzhan.pernebayev\\source\\repos\\Redemption\\Redemption.Interfaces\\Redemption.Interfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nurzhan.pernebayev\\source\\repos\\Redemption\\Redemption.Interfaces\\Redemption.Interfaces.csproj",
+        "projectName": "Redemption.Interfaces",
+        "projectPath": "C:\\Users\\nurzhan.pernebayev\\source\\repos\\Redemption\\Redemption.Interfaces\\Redemption.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\nurzhan.pernebayev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nurzhan.pernebayev\\source\\repos\\Redemption\\Redemption.Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\nurzhan.pernebayev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\nurzhan.pernebayev\\source\\repos\\Redemption\\Redemption.Domain\\Redemption.Domain.csproj": {
+                "projectPath": "C:\\Users\\nurzhan.pernebayev\\source\\repos\\Redemption\\Redemption.Domain\\Redemption.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\nurzhan.pernebayev\\source\\repos\\Redemption\\Redemption\\Redemption.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nurzhan.pernebayev\\source\\repos\\Redemption\\Redemption\\Redemption.csproj",
+        "projectName": "Redemption",
+        "projectPath": "C:\\Users\\nurzhan.pernebayev\\source\\repos\\Redemption\\Redemption\\Redemption.csproj",
+        "packagesPath": "C:\\Users\\nurzhan.pernebayev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nurzhan.pernebayev\\source\\repos\\Redemption\\Redemption\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\nurzhan.pernebayev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\nurzhan.pernebayev\\source\\repos\\Redemption\\Redemption.Domain\\Redemption.Domain.csproj": {
+                "projectPath": "C:\\Users\\nurzhan.pernebayev\\source\\repos\\Redemption\\Redemption.Domain\\Redemption.Domain.csproj"
+              },
+              "C:\\Users\\nurzhan.pernebayev\\source\\repos\\Redemption\\Redemption.Infrastructure\\Redemption.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\nurzhan.pernebayev\\source\\repos\\Redemption\\Redemption.Infrastructure\\Redemption.Infrastructure.csproj"
+              },
+              "C:\\Users\\nurzhan.pernebayev\\source\\repos\\Redemption\\Redemption.Interfaces\\Redemption.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\nurzhan.pernebayev\\source\\repos\\Redemption\\Redemption.Interfaces\\Redemption.Interfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

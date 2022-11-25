@@ -1,0 +1,42 @@
+﻿@model UserRegVM
+@{
+    ViewBag.Title = "Авторизация";
+    Layout = "_Layout";
+}
+<div class="page d-flex justify-content-start">
+    <div class="header m-5">
+        <h2>Админ панель</h2>
+        <div class="container d-flex flex-row justify-content-start">
+            <div class="col-5">
+                <form method="post" asp-controller="Accounts" asp-action="Register">
+                  <div asp-validation-summary="All"></div>
+                  <div class="m-1">
+                      <input class="form-control" asp-for="Email" placeholder="Email">
+                      <span class="text-danger spanEmail" asp-validation-for="Email"></span>
+                  </div>
+                  <div class="m-1">
+                      <input class="form-control" asp-for="Name" placeholder="Name">
+                      <span class="text-danger spanLog" asp-validation-for="Name"></span>
+                  </div>
+                  <div class="m-1">
+                      <input class="form-control" asp-for="LastName" placeholder="Name">
+                      <span class="text-danger spanLog" asp-validation-for="LastName"></span>
+                  </div>
+                  <div class="m-1">
+                      <input class="form-control" asp-for="Password" placeholder="Name">
+                      <span class="text-danger spanLog" asp-validation-for="Password"></span>
+                  </div>
+                  <div class="m-1">
+                      <input class="form-control" asp-for="PasswordConfirm" placeholder="Name">
+                      <span class="text-danger spanLog" asp-validation-for="PasswordConfirm"></span>
+                  </div>
+                  <div class="m-1">
+                      <button class="mt-2 btn btn-primary w-100 buttonReg" type="submit">Создать пользователя</button>
+                  </div>
+              </form>
+            </div>
+        </div>
+        <div class="m-2 col-12">
+      </div>
+    </div>
+</div>
