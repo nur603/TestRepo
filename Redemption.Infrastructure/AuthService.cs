@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Redemption.Domain;
 using Redemption.Interfaces;
 using Redemption.Models;
 using Redemption.Models.Data;
@@ -14,13 +15,30 @@ namespace Redemption.Infrastructure
     {
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
+        private readonly RedemptionContext _redemptionContext;
 
-        public AuthService(UserManager<User> userManager, SignInManager<User> signInManager)
+        public AuthService(UserManager<User> userManager, SignInManager<User> signInManager,RedemptionContext redemptionContext)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _redemptionContext = redemptionContext;
         }
 
+        public List<UserList> GetUsers()
+        {
+            var result = _redemptionContext.Users.Where(s=>s.LockoutEnd == null).ToList();
+            var users = new List<UserList>();
+            foreach (var user in result)
+            {
+                users.Add(new UserList
+                {
+                    Email = user.Email,
+                    Name = user.Name,
+                    LastName = user.LastName
+                });
+            }
+            return users;
+        }
 
         public async Task<AuthServiceResponse> LoginAsync(AuthVM model)
         {
@@ -54,14 +72,13 @@ namespace Redemption.Infrastructure
             {
                 Email = model.Email.ToLower(),
                 Name = model.Name,
-                LastName = model.LastName
+                LastName = model.LastName,
+                UserName = GeneratorAccountNumber().ToString()
             };
 
             var result = await _userManager.CreateAsync(user, model.Password);
             if (result.Succeeded)
-            {
-                await _signInManager.SignInAsync(user, false);
-                
+            { 
                 return new AuthServiceResponse
                 {
                     IsValid = true
@@ -77,5 +94,17 @@ namespace Redemption.Infrastructure
             }
 
         }
+        private int GeneratorAccountNumber()
+        {
+            Random rnd = new Random();
+            var number = 0;
+            do
+            {
+                number = rnd.Next(100000, 999999);
+            } while (_userManager.Users.Any(w => w.UserName == number.ToString()));
+
+            return number;
+        }
+
     }
 }

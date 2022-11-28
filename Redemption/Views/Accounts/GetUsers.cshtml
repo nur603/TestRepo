@@ -1,0 +1,27 @@
+﻿@using Redemption.Domain
+@model List<UserList>
+@{
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">LastName</th>
+      <th scope="col">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        @foreach (var user in @Model)
+            {
+                <tr>
+              <td>@user.Name</td>
+              <td>@user.LastName</td>
+              <td>@user.Email</td>
+              </tr>
+            }
+    </tr>
+  </tbody>
+</table>
+}
+
+   

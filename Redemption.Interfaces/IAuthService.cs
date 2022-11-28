@@ -1,4 +1,6 @@
-﻿using Redemption.Models;
+﻿using Redemption.Domain;
+using Redemption.Models;
+using Redemption.Models.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,5 +14,6 @@ namespace Redemption.Interfaces
         Task<AuthServiceResponse> RegisterAsync(UserRegVM model);
         Task<AuthServiceResponse> LoginAsync(AuthVM model);
         Task LogoutAsync();
+        List<UserList> GetUsers();
     }
 }

@@ -25,7 +25,7 @@ namespace Redemption.Controllers
                 var response = await _authService.RegisterAsync(model);
                 if (response.IsValid)
                 {
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Profile", "Accounts");
                 }
                 else if (response.ModelErrors is not null)
                 {
@@ -74,6 +74,11 @@ namespace Redemption.Controllers
                 return View();
             }
             return BadRequest();
+        }
+        public IActionResult GetUsers()
+        {
+            var result = _authService.GetUsers();
+            return PartialView(result);
         }
         // [HttpPost]
         // [ValidateAntiForgeryToken]

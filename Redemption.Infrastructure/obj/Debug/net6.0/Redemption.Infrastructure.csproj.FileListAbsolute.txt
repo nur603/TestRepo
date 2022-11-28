@@ -1,8 +1,3 @@
-C:\Users\nurzhan.pernebayev\source\repos\Redemption\Redemption.Infrastructure\obj\Debug\net6.0\Redemption.Infrastructure.csproj.AssemblyReference.cache
-C:\Users\nurzhan.pernebayev\source\repos\Redemption\Redemption.Infrastructure\obj\Debug\net6.0\Redemption.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\nurzhan.pernebayev\source\repos\Redemption\Redemption.Infrastructure\obj\Debug\net6.0\Redemption.Infrastructure.AssemblyInfoInputs.cache
-C:\Users\nurzhan.pernebayev\source\repos\Redemption\Redemption.Infrastructure\obj\Debug\net6.0\Redemption.Infrastructure.AssemblyInfo.cs
-C:\Users\nurzhan.pernebayev\source\repos\Redemption\Redemption.Infrastructure\obj\Debug\net6.0\Redemption.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\nurzhan.pernebayev\source\repos\Redemption\Redemption.Infrastructure\bin\Debug\net6.0\Redemption.Infrastructure.deps.json
 C:\Users\nurzhan.pernebayev\source\repos\Redemption\Redemption.Infrastructure\bin\Debug\net6.0\Redemption.Infrastructure.dll
 C:\Users\nurzhan.pernebayev\source\repos\Redemption\Redemption.Infrastructure\bin\Debug\net6.0\Redemption.Infrastructure.pdb
@@ -10,6 +5,11 @@ C:\Users\nurzhan.pernebayev\source\repos\Redemption\Redemption.Infrastructure\bi
 C:\Users\nurzhan.pernebayev\source\repos\Redemption\Redemption.Infrastructure\bin\Debug\net6.0\Redemption.Interfaces.dll
 C:\Users\nurzhan.pernebayev\source\repos\Redemption\Redemption.Infrastructure\bin\Debug\net6.0\Redemption.Interfaces.pdb
 C:\Users\nurzhan.pernebayev\source\repos\Redemption\Redemption.Infrastructure\bin\Debug\net6.0\Redemption.Domain.pdb
+C:\Users\nurzhan.pernebayev\source\repos\Redemption\Redemption.Infrastructure\obj\Debug\net6.0\Redemption.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\nurzhan.pernebayev\source\repos\Redemption\Redemption.Infrastructure\obj\Debug\net6.0\Redemption.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nurzhan.pernebayev\source\repos\Redemption\Redemption.Infrastructure\obj\Debug\net6.0\Redemption.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\nurzhan.pernebayev\source\repos\Redemption\Redemption.Infrastructure\obj\Debug\net6.0\Redemption.Infrastructure.AssemblyInfo.cs
+C:\Users\nurzhan.pernebayev\source\repos\Redemption\Redemption.Infrastructure\obj\Debug\net6.0\Redemption.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\nurzhan.pernebayev\source\repos\Redemption\Redemption.Infrastructure\obj\Debug\net6.0\Redemption.Infrastructure.csproj.CopyComplete
 C:\Users\nurzhan.pernebayev\source\repos\Redemption\Redemption.Infrastructure\obj\Debug\net6.0\Redemption.Infrastructure.dll
 C:\Users\nurzhan.pernebayev\source\repos\Redemption\Redemption.Infrastructure\obj\Debug\net6.0\refint\Redemption.Infrastructure.dll

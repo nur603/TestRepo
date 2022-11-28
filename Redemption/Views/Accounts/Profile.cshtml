@@ -3,11 +3,12 @@
     ViewBag.Title = "Авторизация";
     Layout = "_Layout";
 }
+<h2>Админ панель</h2>
 <div class="page d-flex justify-content-start">
     <div class="header m-5">
-        <h2>Админ панель</h2>
+        <h2>Создать пользователя</h2>
         <div class="container d-flex flex-row justify-content-start">
-            <div class="col-5">
+            <div class="col-12">
                 <form method="post" asp-controller="Accounts" asp-action="Register">
                   <div asp-validation-summary="All"></div>
                   <div class="m-1">
@@ -19,15 +20,15 @@
                       <span class="text-danger spanLog" asp-validation-for="Name"></span>
                   </div>
                   <div class="m-1">
-                      <input class="form-control" asp-for="LastName" placeholder="Name">
+                      <input class="form-control" asp-for="LastName" placeholder="LastName">
                       <span class="text-danger spanLog" asp-validation-for="LastName"></span>
                   </div>
                   <div class="m-1">
-                      <input class="form-control" asp-for="Password" placeholder="Name">
+                      <input class="form-control" asp-for="Password" placeholder="Password">
                       <span class="text-danger spanLog" asp-validation-for="Password"></span>
                   </div>
                   <div class="m-1">
-                      <input class="form-control" asp-for="PasswordConfirm" placeholder="Name">
+                      <input class="form-control" asp-for="PasswordConfirm" placeholder="PasswordConfirm">
                       <span class="text-danger spanLog" asp-validation-for="PasswordConfirm"></span>
                   </div>
                   <div class="m-1">
@@ -36,7 +37,22 @@
               </form>
             </div>
         </div>
-        <div class="m-2 col-12">
+       
       </div>
-    </div>
+       <div class="m-2 col-6" id="GetLoad">
+      </div> 
 </div>
+@section Scripts
+{
+    <script>
+        
+        $(document).ready(function() {
+    
+    loadComment()
+        });
+        function loadComment(){
+            
+    $("#GetLoad").load('@Url.Action("GetUsers", "Accounts")')
+        }
+    </script>
+}
