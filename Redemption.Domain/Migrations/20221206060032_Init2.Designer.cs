@@ -12,8 +12,8 @@ using Redemption.Models.Data;
 namespace Redemption.Domain.Migrations
 {
     [DbContext(typeof(RedemptionContext))]
-    [Migration("20221125062132_Init")]
-    partial class Init
+    [Migration("20221206060032_Init2")]
+    partial class Init2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -165,16 +165,22 @@ namespace Redemption.Domain.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("timestamp with time zone");
+                        .HasColumnType("timestamp without time zone");
 
-                    b.Property<bool>("Rps1")
-                        .HasColumnType("boolean");
+                    b.Property<string>("ExternalId")
+                        .HasColumnType("text");
 
-                    b.Property<bool>("Rps2")
-                        .HasColumnType("boolean");
+                    b.Property<string>("Message")
+                        .HasColumnType("text");
 
-                    b.Property<bool>("Rps3")
-                        .HasColumnType("boolean");
+                    b.Property<string>("MessageCode")
+                        .HasColumnType("text");
+
+                    b.Property<string>("ResultCode")
+                        .HasColumnType("text");
+
+                    b.Property<string>("TransactionId")
+                        .HasColumnType("text");
 
                     b.Property<string>("UserId")
                         .IsRequired()

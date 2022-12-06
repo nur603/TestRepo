@@ -5,8 +5,11 @@
         public int Id { get; set; }
         public string UserId { get; set; }
         public DateTime CreatedDate { get; set; }
-        public bool Rps1 { get; set; }
-        public bool Rps2 { get; set; }
-        public bool Rps3 { get; set; }
+        public string? TransactionId { get; set; }
+        
+        public string? ResultCode { get; set; }
+        public string? MessageCode { get; set; }
+        public string? ExternalId { get; set; }
+        public string? Message { get; set; }
     }
 }

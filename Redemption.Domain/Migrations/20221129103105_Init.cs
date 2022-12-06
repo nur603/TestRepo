@@ -59,9 +59,11 @@ namespace Redemption.Domain.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     UserId = table.Column<string>(type: "text", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    Rps1 = table.Column<bool>(type: "boolean", nullable: false),
-                    Rps2 = table.Column<bool>(type: "boolean", nullable: false),
-                    Rps3 = table.Column<bool>(type: "boolean", nullable: false)
+                    TransactionId = table.Column<string>(type: "text", nullable: true),
+                    ResultCode = table.Column<string>(type: "text", nullable: false),
+                    MessageCode = table.Column<string>(type: "text", nullable: true),
+                    ExternalId = table.Column<string>(type: "text", nullable: true),
+                    Message = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
                 {

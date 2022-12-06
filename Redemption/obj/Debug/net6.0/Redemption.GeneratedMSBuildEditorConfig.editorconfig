@@ -27,16 +27,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcUHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nurzhan.pernebayev/source/repos/Redemption/Redemption/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/nurzhan.pernebayev/source/repos/Redemption/Redemption/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/nurzhan.pernebayev/source/repos/Redemption/Redemption/Views/Redemption/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVkZW1wdGlvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nurzhan.pernebayev/source/repos/Redemption/Redemption/Views/Redemption/Repayment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVkZW1wdGlvblxSZXBheW1lbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/nurzhan.pernebayev/source/repos/Redemption/Redemption/Views/Shared/_ValidationScriptsPartial.cshtml]

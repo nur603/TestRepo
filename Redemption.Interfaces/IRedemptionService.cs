@@ -9,6 +9,7 @@ namespace Redemption.Interfaces
 {
     public interface IRedemptionService
     {
-        Task<Response> CreateAsync(CreateRedemption model);
+        Task<Response> CreateAsync(CreateRedemption model, string email);
+        Task<Response> Repayment(Repayment model, string email);
     }
 }

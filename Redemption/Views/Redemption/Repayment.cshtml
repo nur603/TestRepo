@@ -1,14 +1,14 @@
 ﻿@using Redemption.Domain
 @model CreateRedemption
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Repayment";
     Layout = "_Layout";
 }
 <div class="page d-flex justify-content-center">
     <div class="header m-5">
         <h2>Create Redemption</h2>
         <div class="container d-flex justify-content-center">
-            <form method="post" asp-controller="Redemption" asp-action="Create">
+            <form method="post" asp-controller="Redemption" asp-action="Repayment">
                 <div asp-validation-summary="ModelOnly"></div>
                 <div class="m-1">
                     <select class="form-control w-100" required="required" asp-for="Company" id="">

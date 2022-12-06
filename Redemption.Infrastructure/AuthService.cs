@@ -73,7 +73,7 @@ namespace Redemption.Infrastructure
                 Email = model.Email.ToLower(),
                 Name = model.Name,
                 LastName = model.LastName,
-                UserName = GeneratorAccountNumber().ToString()
+                UserName = model.Email
             };
 
             var result = await _userManager.CreateAsync(user, model.Password);

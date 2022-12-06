@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Redemption.Models.Data;
@@ -11,9 +12,10 @@ using Redemption.Models.Data;
 namespace Redemption.Domain.Migrations
 {
     [DbContext(typeof(RedemptionContext))]
-    partial class RedemptionContextModelSnapshot : ModelSnapshot
+    [Migration("20221129103105_Init")]
+    partial class Init
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -163,18 +165,20 @@ namespace Redemption.Domain.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("timestamp without time zone");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("ExternalId")
                         .HasColumnType("text");
 
                     b.Property<string>("Message")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("MessageCode")
                         .HasColumnType("text");
 
                     b.Property<string>("ResultCode")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("TransactionId")

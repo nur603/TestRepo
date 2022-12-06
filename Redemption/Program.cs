@@ -1,14 +1,21 @@
     using Microsoft.AspNetCore.Identity;
     using Microsoft.EntityFrameworkCore;
+using Redemption.Domain;
 using Redemption.Infrastructure;
 using Redemption.Interfaces;
 using Redemption.Models.Data;
 
 var builder = WebApplication.CreateBuilder(args);
-
+//Config comissionConfig = builder.Configuration.GetSection("Comission").Get<Config>(); 
+//Config main = builder.Configuration.GetSection("Main").Get<Config>(); 
+//Config jassefi = builder.Configuration.GetSection("Jassefi").Get<Config>();
+//builder.Services.AddSingleton(comissionConfig);
+//builder.Services.AddSingleton(main);
+//builder.Services.AddSingleton(jassefi);
 string connection = builder.Configuration.GetConnectionString("DbConnection");
     builder.Services.AddDbContext<RedemptionContext>(options => options.UseNpgsql(connection)).AddIdentity<User, IdentityRole>().AddEntityFrameworkStores<RedemptionContext>();
-    builder.Services.Configure<IdentityOptions>(options =>
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+builder.Services.Configure<IdentityOptions>(options =>
     {
     // Password settings.
     options.Password.RequireDigit = false;

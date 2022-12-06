@@ -23,10 +23,27 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Redemption" asp-action="Index">Create</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Accounts" asp-action="Getusers">Users</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Redemption" asp-action="Repayment">Repayment</a>
                         </li>
+                        @if (User.IsInRole("admin"))
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Accounts" asp-action="Profile">Profile</a>
+                        </li>
+                    }
                     </ul>
                 </div>
+                <div class="navbar-collapse collapse d-flex justify-content-end">
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Accounts" asp-action="Logout">Exit</a>
+                            }
+                            else
+                            {
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Accounts" asp-action="Login">Login</a>
+                            }
+                       
+            </div>
             </div>
         </nav>
     </header>
@@ -47,3 +64,4 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+

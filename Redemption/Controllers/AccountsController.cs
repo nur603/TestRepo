@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Redemption.Interfaces;
 using Redemption.Models;
 
 namespace Redemption.Controllers
 {
+    [Authorize]
     public class AccountsController : Controller
     {
         private readonly IAuthService _authService;
@@ -43,6 +45,7 @@ namespace Redemption.Controllers
             return View(model);
         }
         [HttpGet]
+        [AllowAnonymous]
         public IActionResult Login(string returnUrl = null)
         {
             return View(new AuthVM { ReturnUrl = returnUrl });
@@ -50,6 +53,7 @@ namespace Redemption.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
 
+        [AllowAnonymous]
         public async Task<IActionResult> Login(AuthVM model)
         {
             if (ModelState.IsValid)
@@ -70,9 +74,7 @@ namespace Redemption.Controllers
         public IActionResult Profile()
         {
             if (User.IsInRole("admin"))
-            {
                 return View();
-            }
             return BadRequest();
         }
         public IActionResult GetUsers()
@@ -80,8 +82,6 @@ namespace Redemption.Controllers
             var result = _authService.GetUsers();
             return PartialView(result);
         }
-        // [HttpPost]
-        // [ValidateAntiForgeryToken]
         public async Task<IActionResult> Logout()
         {
             await _authService.LogoutAsync();

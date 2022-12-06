@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Redemption.Domain
 {
-    public class CreateRedemption
+    public class Repayment
     {
         public string Company { get; set; }
         public decimal Amount { get; set; }
-        public string? Currency { get; set; }
     }
 }
